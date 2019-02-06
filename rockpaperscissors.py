@@ -7,9 +7,9 @@ tie = 0
 def main():
 
     print("Welcome to the ROCK PAPER SCISSORS Game.\n Winning rules of the 'Rock Paper Scissors Game' is as follows: \n"
-                                    +"Rock blunts Scissors \n"
-                                    +"Paper covers Rock \n"
-                                    +"Scissors cut Paper \n")
+                                    +"ROCK blunts SCISSORS \n"
+                                    +"PAPER covers ROCK \n"
+                                    +"SCISSORS cut PAPER \n")
 
     while True:
         comp_choice = random.randint(1, 3)
