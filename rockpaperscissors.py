@@ -1,4 +1,5 @@
 import random
+
 win = 0
 lose = 0
 tie = 0
@@ -45,15 +46,15 @@ def main():
         print(user_choice_name, " V/S " ,comp_choice_name)
         print("\n")
 
-        if((user_choice == 1 and comp_choice == 3)):
+        if(user_choice == 1 and comp_choice == 3):
             result = 'win'
             print("You win!\n")
 
-        elif((user_choice == 2 and comp_choice == 1)):
+        elif(user_choice == 2 and comp_choice == 1):
             result = 'win'
             print("You win!\n")
 
-        elif((user_choice == 3 and comp_choice == 2)):
+        elif(user_choice == 3 and comp_choice == 2):
             result = 'win'
 
         elif(user_choice == comp_choice):
@@ -62,7 +63,7 @@ def main():
         else:
             result = 'lose'
 
-        score(user_choice,comp_choice,result)
+        score(result)
 
         print("Do you want to play again? (Y/N)")
         ans = input()
@@ -77,7 +78,8 @@ def main():
 
     print("\nThanks for playing")
 
-def score(user_choice,comp_choice,result):
+    
+def score(result):
     global win
     global lose
     global tie
@@ -95,7 +97,6 @@ def score(user_choice,comp_choice,result):
         print("<== The game is tied ==>")
 
     return result
-
 
 
 main()
